@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-aplicação = FastAPI()
+app = FastAPI()
 
-@aplicação.get("/agenda-hoje")
+@app.get("/agenda-hoje")
 def ler_agenda():
     return {"mensagem": "Agenda de hoje lida com sucesso"}
